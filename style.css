@@ -1,0 +1,258 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+:root{
+    --bg-clr:#2bff00e0;
+}
+#navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: 0.5rem;
+    box-shadow:5px 5px 20px rgba(0, 0, 0, 0.5) ;
+    background-color: black;
+}
+.navbar .navbar-brand{
+    font-size: 25px;
+    font-weight: 800;
+    color: var(--bg-clr) !important;
+}
+#navbarSupportedContent a{
+    color: #fff; 
+    border-bottom: 2px solid transparent;
+}
+#navbarSupportedContent a:hover{
+    border-bottom: 2px solid var(--bg-clr);
+    
+}
+#navbarSupportedContent button{
+    background-color:var(--bg-clr);
+    margin-right: .5rem;
+    width: 5rem;
+    border-radius: 30px;
+}
+#navbarSupportedContent button:hover{
+    background-color: #2fb135 !important;
+    color: white !important;
+    transition: background-color 0.2s;
+}
+.btn{
+    background-color: var(--bg-clr) !important;
+}
+/****Home***/
+#home{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,.6)),url(https://eskipaper.com/images/spices-wallpaper-3.jpg);
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    
+}
+#home h1{
+    font-size: 100px;
+    color: white;
+    letter-spacing: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 0px 4px black;
+}
+#home p{
+    font-size: 18px;
+    color: white;
+}
+#home .input-group{
+   width: 50%;
+   height: 2rem;
+   
+}
+.btn-sigin{
+    background-color: var(--bg-clr);
+    border: none;
+    padding: 0 5px;
+    border-radius: 0 4px 4px 0px;
+    position: relative;
+    top: 6px;
+    height: 38px;
+    
+}
+.btn-sigin:hover {
+    background-color: #2fb135 !important;
+    color: white !important;
+    transition: background-color 0.2s;
+  }
+
+
+/***About***/
+
+#about{
+    background:rgb(220, 245, 220);
+
+}
+#about h1{
+    margin: 20px 0;
+    font-weight: 800;
+    font-size: 50px
+}
+
+
+/***Products***/
+
+
+#products{
+    background: #e5e5e5;
+    
+}
+#products h1{
+    font-size: 3rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+#products img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+.card{
+    width: 15.6rem;
+    height: 18.75rem;
+    background: #e5e5e5 !important;
+    border: none !important;
+    box-shadow: 15px 20px 20px rgba(0, 0, 0, 0.721),
+                inset 4px 4px 10px white;
+    border-radius: 25px !important;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 60px;
+}
+.card:hover{
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3),
+                inset -4px -4px 10px white
+}
+
+
+/******/
+
+
+
+#contact{
+    background: #e5e5e5;
+    margin-top: 4rem;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: var(--bg-clr);
+    border-radius: 5px;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+    color:white;
+  }
+  
+
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+ 
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  
+  @media screen and (max-width: 600px){
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+    #home h1{
+        font-size: 5rem;
+    }
+    #home p{
+        font-size: 13px;
+        color: white;
+  }
+  .column img{
+    width: 8rem;
+    height: 35rem;
+    
+  }
+  #home .input-group{
+    width: 80%;
+    height: 2rem;
+    
+ }
+
+  }
+  @media screen and (max-width:400px){
+
+    #home h1{
+        font-size: 3rem;
+    }
+    .card{
+        width: 12rem;
+        height: 18rem;
+        
+        margin: 20px 60px;
+    }
+  }
+  @media screen and (min-width: 600px) and (max-width: 900px) {
+    .card{
+        width: 12rem;
+        height: 18rem;
+        margin: 20px 0px;
+    }
+
+}
+@media screen and (min-width:901px)and (max-width:1000px){
+
+    .card{
+        width: 13.6rem;
+        margin: 20px -6px;
+    }
+}
+@media screen and (max-width:299px){
+    .card{
+        
+        margin: 20px 30px;
+    }
+
+}
